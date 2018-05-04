@@ -7,4 +7,4 @@ COPY app app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "gunicorn", "--chdir", "/usr/src/app", "--bind", "0.0.0.0:8007", "app.wsgi" ]
+CMD [ "gunicorn", "-w", "$(( $(nproc) * 2 + 1 ))", "--chdir", "/usr/src/app", "--bind", "0.0.0.0:8007", "app.wsgi" ]
