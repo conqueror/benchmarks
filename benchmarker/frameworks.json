@@ -45,11 +45,6 @@
         "port": 8008
     },
     { 
-        "name": ".net core",
-        "language": "c#",
-        "port": 8009
-    },
-    { 
         "name": "phoenix",
         "language": "elixir",
         "port": 8010

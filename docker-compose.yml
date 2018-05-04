@@ -37,10 +37,6 @@ services:
     build: frameworks/node/express
     ports:
       - 8008:8008
-  aspnet:
-    build: frameworks/csharp/aspnetcore
-    ports:
-      - 8009:8009
   phoenix:
     build: frameworks/elixir/phoenix
     ports:
