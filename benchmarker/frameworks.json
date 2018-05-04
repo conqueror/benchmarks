@@ -53,5 +53,10 @@
         "name": "phoenix",
         "language": "elixir",
         "port": 8010
+    },
+    { 
+        "name": "phalcon",
+        "language": "php",
+        "port": 8011
     }
 ]
