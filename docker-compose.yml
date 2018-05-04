@@ -45,4 +45,8 @@ services:
     build: frameworks/elixir/phoenix
     ports:
       - 8010:8010
+  phalcon:
+    build: frameworks/php/phalcon
+    ports:
+      - 8011:8011
 
