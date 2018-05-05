@@ -1,5 +1,9 @@
 require 'sinatra'
 
+after do
+  response['Date'] = Time.now.httpdate
+end
+
 get '/' do
   # do nothing
 end
